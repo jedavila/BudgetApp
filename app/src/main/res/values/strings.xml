@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Proyecto3_Budget</string>
+    <string name="educacion">Educación</string>
+    <string name="salud">Salud</string>
+    <string name="comida">Comida</string>
+    <string name="total">Total</string>
+    <string name="descripcion">Descripción</string>
+    <string name="valor">Valor</string>
+    <string name="fecha">Fecha</string>
+    <string name="editar">Editar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="agregarItem">Agregar Nuevo Item</string>
+    <string name="editarItem">Editar Item</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="guardar">Guardar</string>
+
+
+
+
+</resources>

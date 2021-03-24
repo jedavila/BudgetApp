@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".comida">
+
+    <ImageButton
+        android:id="@+id/bntEducation"
+        android:layout_width="46dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/btn_redondo"
+        android:forceDarkAllowed="false"
+        android:onClick="startEducacion"
+        app:backgroundTint="@color/verde"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toStartOf="@+id/txtInicio"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.196"
+        app:srcCompat="@drawable/ic_school" />
+
+    <ImageButton
+        android:id="@+id/btnSalud"
+        android:layout_width="46dp"
+        android:layout_height="41dp"
+        android:background="@drawable/btn_redondo"
+        android:text="Button"
+        android:onClick="startSalud"
+        app:srcCompat="@drawable/ic_hospital"
+        app:backgroundTint="@color/red"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toEndOf="@+id/bntEducation"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.198" />
+
+    <ImageButton
+        android:id="@+id/btnComida"
+        android:layout_width="46dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/btn_redondo"
+        android:text="Button"
+        android:onClick="startComida"
+        app:srcCompat="@drawable/ic_food"
+        app:backgroundTint="@color/amarillo"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toEndOf="@+id/btnSalud"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.198" />
+
+    <ImageButton
+        android:id="@+id/btnTotal"
+        android:layout_width="46dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/btn_redondo"
+        android:text="Button"
+        android:onClick="startTotal"
+        app:srcCompat="@drawable/ic_total"
+        app:backgroundTint="@color/oscuro"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.258"
+        app:layout_constraintStart_toEndOf="@+id/btnComida"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.198" />
+
+    <TextView
+        android:id="@+id/txtEd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/educacion"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/bntEducation"
+        app:layout_constraintStart_toStartOf="@+id/bntEducation"
+        app:layout_constraintTop_toBottomOf="@+id/bntEducation"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/total"
+        app:layout_constraintEnd_toEndOf="@+id/btnTotal"
+        app:layout_constraintStart_toStartOf="@+id/btnTotal"
+        app:layout_constraintTop_toBottomOf="@+id/btnTotal" />
+
+    <TextView
+        android:id="@+id/txtSalud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/salud"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/btnSalud"
+        app:layout_constraintStart_toStartOf="@+id/btnSalud"
+        app:layout_constraintTop_toBottomOf="@+id/btnSalud"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtComida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/comida"
+        app:layout_constraintEnd_toEndOf="@+id/btnComida"
+        app:layout_constraintStart_toStartOf="@+id/btnComida"
+        app:layout_constraintTop_toBottomOf="@+id/btnComida" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/azul"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/comida"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="@+id/toolbar" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="451dp"
+        android:background="@drawable/view_design_comida"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ScrollView
+        android:layout_width="388dp"
+        android:layout_height="388dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="1.0">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:id="@+id/tableComida"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/stroke_table">
+
+                <TableRow
+                    android:id="@+id/Header"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/stroke_table">
+
+                    <TextView
+                        android:id="@+id/txtDescripcion"
+                        android:layout_width="129dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/descripcion" />
+
+                    <TextView
+                        android:id="@+id/txtValor"
+                        android:layout_width="79dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/valor" />
+
+                    <TextView
+                        android:id="@+id/txtFecha"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fecha" />
+
+                    <TextView
+                        android:id="@+id/txtEditar"
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/editar" />
+
+                    <TextView
+                        android:id="@+id/txtEliminar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/eliminar" />
+                </TableRow>
+
+            </TableLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/btnNew"
+        android:layout_width="70dp"
+        android:layout_height="71dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/btn_redondo"
+        android:text="Button"
+        android:onClick="startNewItem"
+        app:backgroundTint="@color/azul"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_plus" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
